@@ -1,5 +1,5 @@
 import React from 'react'
-import line from '../img/line 1.png'
+import line from '../img/line.png'
 import { NavLink } from 'react-router-dom'
 
 const Home = () => {
