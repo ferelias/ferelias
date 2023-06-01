@@ -1,0 +1,553 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+    --fondo: #090908;
+    --fondoDifum: rgba(76, 76, 76, 0.415);
+    --fondoDifum2: #ffffffc1;
+    --fondo2: #cbd1b99b;
+    --titulares: #CEE393;
+    --titularDifum: #fbfbfba7;
+    --blackk: #000000d2;
+    --white: #f0f9d4;
+}
+
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Bebas Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+#game-container {
+    width: 100%;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*---------------Menu-----------------------*/
+.menu {
+    background-color: var(--fondoDifum);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    padding: 10px;
+    margin: 9px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.inicio {
+    font-size: 58px;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--titularDifum);
+}
+
+.inicio a:hover {
+    color: var(--titulares);
+}
+
+.redesSociales :hover {
+    background-color: var(--titulares);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+/*-------------Main--------------*/
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo2);
+    height: 430px;
+    padding: 60px 300px;
+    margin: 9px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.nom p {
+    font-size: 96px;
+    color: var(--white);
+}
+
+.foto{
+    width: 300px;
+    height: 300px;
+    background-color: #2A2B29;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fondoDifum2);
+    font-size: 30px;
+}
+
+.btnHab {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color:var(--fondoDifum2);
+    width: 100px;
+    margin: 0px 20px;
+    padding: 3px 20px;
+    border: solid var(--fondoDifum2);
+    border-radius: 30px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.btnHab:hover {
+    color: var(--blackk);
+    background-color: var(--titulares);
+    border: solid var(--titulares);
+}
+
+.phab{
+    margin: 0 70px;
+}
+
+.line img {
+    width: 100%;
+}
+
+.disciplinas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.disbtn {
+    width: 50%;
+}
+
+.btnDis {
+    display: grid;
+    align-items: end;
+    text-decoration: none;
+    color:var(--white);
+    background-color: var(--fondo2);
+    width: 98%;
+    padding: 20px;
+    margin: 20px 40px 20px 0px;
+    border-radius: 30px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.btnDis:hover {
+    background-color: var(--white);
+    color: var(--blackk);
+}
+
+.biografia {
+    width: 50%;
+    padding: 20px;
+    margin: 20px 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background-color: var(--fondoDifum);
+    border-radius: 30px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.bioText {
+    color: var(--white);
+    letter-spacing: 3px;
+    padding: 7px;
+    text-align: justify;
+    text-align: ju;
+}
+
+.contactar {
+    display: flex;
+    justify-content: end;
+}
+
+.btnBio {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    color:var(--fondoDifum2);
+    padding: 3px 10px;
+    background-color: var(--titulares);
+    color: var(--blackk);
+    border-radius: 30px;
+    margin-top: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+.btnBio:hover {
+    background-color: var(--white);
+    color: var(--blackk);
+}
+
+.certificados {
+  width: 150px;
+}
+
+.info {
+    width: 99%;
+    margin: 20px 10px;
+}
+
+.info1 {
+    width: 100%;
+    display: flex;
+}
+
+.uiux {
+    width: 50%;
+    background-color: var(--fondoDifum);
+    margin: 20px 10px;
+    padding: 20px;
+    color: var(--white);
+    font-family: 'Open Sans';
+    font-size: 26px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--titulares);
+    font-size: 46px;
+    margin: 10px;
+}
+
+.info2{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.front {
+    width: 50%;
+    margin: 20px 10px;
+    background-color: var(--fondoDifum);
+    padding: 20px;
+    color: var(--white);
+    font-family: 'Open Sans';
+    font-size: 26px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.info3{
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.art {
+    width: 50%;
+    margin: 20px 10px;
+    background-color: var(--fondoDifum);
+    padding: 20px;
+    color: var(--white);
+    font-family: 'Open Sans';
+    font-size: 26px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.pskill{
+    text-align: center;
+}
+
+.librerias{
+    display: flex;
+    justify-content: center;
+    background-color: var(--fondoDifum);
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.pskill{
+    color: var(--white);
+    font-size: 26px;
+}
+
+.caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.c {
+   padding: 20px 0;
+}
+
+.c img {
+    margin: 10px;
+}
+
+.c p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.contacto {
+    display: flex;
+    padding: 50px;
+    background-color: var(--fondoDifum);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.img-contacto {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.cont-digital {
+    width: 100%;
+}
+
+.art-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-sotware {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1600px) {
+    .menu {
+        height: 70px;
+    }
+       
+    .menu a svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu a {
+        margin: 5px;
+    }
+
+    .inicio {
+        font-size: 50px;
+    }
+
+    .presentacion {
+        background-color: var(--fondo2);
+        height: 270px;
+        padding: 10px 200px;
+    }
+
+    .foto{
+        width: 200px;
+        height: 200px;
+        background-color: #2A2B29;
+    }
+    
+}
+
+@media screen and (max-width: 1102px) {
+
+    .nom p{
+        font-size: 77px;
+    }
+
+    .presentacion {
+        background-color: var(--fondo2);
+        height: 270px;
+        padding: 10px 100px;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    .presentacion{
+        padding: 10px 20px;
+    }
+
+    .nom p {
+        font-size: 50px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .disbtn a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .disciplinas{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .biografia {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btnDis {
+        width: 250px;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .biografia {
+        width: 100%;
+    }
+    
+    .presentacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .foto {
+        margin: 10px auto;
+    }
+
+    .nom {
+        text-align: center;
+    }
+
+    .inicio {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .habilidades {
+        display: none;
+        
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uiux  {
+        width: 100%;
+    }
+
+    .front {
+        width: 100%;
+    }
+
+    .art {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .contacto {
+        height: 30%;
+    }  
+    
+    .info1 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 351px){
+    .contactoImg img {
+        width: 250px;
+    }
+}@media screen and (max-width: 351px) {
+    .c img {
+        width: 70px;
+    }
+}
+

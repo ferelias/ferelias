@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+    --fondo: #090908;
+    --fondoDifum: rgba(76, 76, 76, 0.415);
+    --fondoDifum2: #ffffffc1;
+    --fondo2: #cbd1b99b;
+    --titulares: #CEE393;
+    --titularDifum: #fbfbfba7;
+    --blackk: #000000d2;
+    --white: #f0f9d4;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80vh;
+    background-color: var(--fondoDifum);
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.img-front {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-diseñador{
+    width: 80%;
+}
+
+.cont-des {
+    background-color: var(--fondo2);
+    margin-right: 20px;
+    padding: 50px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: var(--white);
+    font-size: 36px;
+    text-align: justify;
+}
+
+.enlace-work {
+    text-decoration: none;
+    color: var(--fondo);
+}
+
+.btn-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fondoDifum);
+    border: solid #000;
+    margin-top: 30px;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.btn-work:hover {
+    background-color: #CEE393;
+}
+
+@media screen and (max-width: 1214px) {
+    .cont-img {
+        width: 90%;
+        height: 70vh;
+        margin: 10px auto;
+    }
+    
+    .img-front {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .cont-des {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .btn-work p {
+        font-size: 20px;
+    }
+
+    .cont-img {
+        height: 30vh;
+    }
+}
