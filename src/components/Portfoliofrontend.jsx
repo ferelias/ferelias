@@ -29,7 +29,7 @@ const Portfoliofrontend = () => {
                     <p className='des-proyect'>Este proyecto consiste en crear el diseño y desarrollo de una página web de una cafetería, utilizando herramientas de UI/UX como Figma, así como herramientas web como HTML, CSS y JavaScript.</p>
                 </div>
                 <div className="ver-mas">
-                    <a to="https://ferelias.github.io/Cafe-Toulouse/" className="enlace-workpage" target="_new">Abrir</a>
+                    <a href="https://ferelias.github.io/Cafe-Toulouse/" className="enlace-workpage" target="_new">Abrir</a>
                 </div>
             </div>
             
