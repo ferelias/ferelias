@@ -3,6 +3,7 @@ import cine from '../img/cine.png';
 import pizza from '../img/pizza.png';
 import toulouse from '../img/toulouse.png';
 import clima from '../img/climaferel.png';
+import frc from '../img/lcf.png';
 import { NavLink } from 'react-router-dom';
 
 const Portfoliouiux = () => {
@@ -19,6 +20,12 @@ const Portfoliouiux = () => {
                 </NavLink>
             </div>
             <h1>UI/UX</h1>
+        </div>
+
+        <div className="contenido margintop">
+            <div className="imagen">
+                <img className='img-uiux' src={frc} alt="" />
+            </div>
         </div>
 
         <div className="contenido margintop">
