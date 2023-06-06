@@ -460,8 +460,16 @@ h2 {
 @media screen and (max-width: 508px) {
     .disciplinas{
         display: block;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
         width: 90%;
         margin: 10px auto;
+    }
+
+    .disbtn {
+        display: grid;
+        align-items: center;
+        justify-content: center;
     }
 
     .biografia {
@@ -471,7 +479,7 @@ h2 {
 
     .btnDis {
         width: 250px;
-        margin: 10px auto;
+        margin-left: 35%;
         padding: 5px;
     }
 
@@ -482,7 +490,7 @@ h2 {
     .presentacion{
         display: grid;
         grid-template-columns: 1fr;
-        height: auto;
+        height: 200px;
     }
 
     .foto {
@@ -504,10 +512,27 @@ h2 {
     }
 
     .habilidades {
-        display: none;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--fondoDifum2);
+        font-size: 20px;
     }
 
+    .btnHab {
+        width: 100px;
+        margin: 0px 10px;
+        padding: 3px 10px;
+        border: solid var(--fondoDifum2);
+    }
+
+    .bioText{
+        font-size: 16px;
+    }
+
+    .phab{
+        margin: 0 20px;
+    }
     .info {
         display: grid;
         grid-template-columns: 1fr;
