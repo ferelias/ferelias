@@ -23,7 +23,7 @@ const Portfoliouiux = () => {
             <h1>UI/UX</h1>
         </div>
 
-        <div className="Medi-control">
+        <div className="contenido margintop">
             <div className="imagen">
                 <img className='img-uiux' src={medi} alt="" />
             </div>
