@@ -15,7 +15,7 @@ const RouterPrincipal = () => {
       <BrowserRouter>
         <nav className='menu'>
           <div className="inicio">
-            <NavLink to="/inicio">FERNANDO ELIAS CRUZ</NavLink>
+            <NavLink to="/inicio">FERNANDO ELIAS</NavLink>
           </div>
 
           <div className="redesSociales">
@@ -52,7 +52,7 @@ const RouterPrincipal = () => {
             <Route path='/artedigital' element={<Arte/>}></Route>
             <Route path='/portfoliouiux' element={<Portfoliouiux/>}></Route>
             <Route path='/portfolifrontend' element={<Portfoliofrontend/>}></Route>
-            <Route path='*' element={<Home/>} />
+            <Route path='*' element={<Home/>}></Route>
             
         </Routes>
       </BrowserRouter>
