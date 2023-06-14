@@ -52,7 +52,7 @@ const RouterPrincipal = () => {
             <Route path='/artedigital' element={<Arte/>}></Route>
             <Route path='/portfoliouiux' element={<Portfoliouiux/>}></Route>
             <Route path='/portfolifrontend' element={<Portfoliofrontend/>}></Route>
-            
+            <Route path='*' element={<Home/>} />
             
         </Routes>
       </BrowserRouter>
