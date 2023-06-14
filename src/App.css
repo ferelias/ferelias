@@ -58,6 +58,7 @@ canvas {
 .menu a {
     display: inline-block;
     text-decoration: none;
+    margin-left: 20px;
     color: var(--titularDifum);
 }
 
@@ -65,13 +66,17 @@ canvas {
     color: var(--titulares);
 }
 
+.redesSociales {
+    margin-right: 10px;
+}
+
 .redesSociales :hover {
     background-color: var(--titulares);
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /*-------------Main--------------*/
