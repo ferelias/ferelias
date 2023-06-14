@@ -15,7 +15,7 @@ const RouterPrincipal = () => {
       <BrowserRouter>
         <nav className='menu'>
           <div className="inicio">
-            <NavLink to="/inicio">FERNANDO ELIAS</NavLink>
+            <NavLink to="/inicio">FERNANDO ELIAS CRUZ</NavLink>
           </div>
 
           <div className="redesSociales">
