@@ -4,6 +4,7 @@ import pizza from '../img/pizza.png';
 import toulouse from '../img/toulouse.png';
 import clima from '../img/climaferel.png';
 import frc from '../img/lcf.png';
+import winter from '../img/wintwe.png';
 import medi from '../img/medicontrol.png';
 import { NavLink } from 'react-router-dom';
 
@@ -26,6 +27,12 @@ const Portfoliouiux = () => {
         <div className="contenido margintop">
             <div className="imagen">
                 <img className='img-uiux' src={medi} alt="" />
+            </div>
+        </div>
+
+        <div className="contenido margintop">
+            <div className="imagen">
+                <img className='img-uiux' src={winter} alt="" />
             </div>
         </div>
 
